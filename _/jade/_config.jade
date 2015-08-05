@@ -1,0 +1,71 @@
+- var titulo = "Target Steele"
+- var dominio = "index.html"
+//META TAGS
+- var keywords = ""
+- var description = ""
+- var stylesheets = ['http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700', 'http://fonts.googleapis.com/css?family=Days+One']
+- var javascripts = ['_/jquery.js', '_/responsiveslides.js','_/scrollReveal.js', '_/featherlight.js', '_/tooltipster.js', '_script.js']
+// Sitio
+- var logo = "target-steele.png"
+- var logoAlt = "target-steele-imagotipo.png"
+
+- var menu = [['nosotros', 'Nosotros'],['contacto', 'Contacto'], ['eventos', 'Eventos']]
+- var menu2 = [['index', 'Inicio'],['haste', 'Haste'], ['lifetrak', 'LifeTrak'], ['asics', 'Asics'], ['stuhrling', 'Stührling']]
+
+
+mixin header(page)
+  header
+    .topbar
+      .container(data-sr)
+        +socials
+        nav: +navigation(page,menu)
+        
+    #header
+      if(page=="haste")
+        .container.haste
+          +logo(logoAlt,titulo,dominio)
+          .logoB(data-sr="enter top"): img(src="_/img/logo_haste.png", alt="Haste")
+          nav(data-sr="enter top"): +navigation(page,menu2)
+      else if(page=="lifetrak")
+        .container.lifetrak
+          +logo(logoAlt,titulo,dominio)
+          .logoB(data-sr="enter top"): img(src="_/img/logo_lifetrak.png", alt="LifeTrak")
+          nav(data-sr="enter top"): +navigation(page,menu2)
+      else if(page=="asics")
+        .container.asics
+          +logo(logoAlt,titulo,dominio)
+          .logoB(data-sr="enter top"): img(src="_/img/logo_asics.png", alt="Asics")
+          nav(data-sr="enter top"): +navigation(page,menu2)
+      else 
+        .container
+          +logo(logo,titulo,dominio)
+          nav(data-sr="enter top"): +navigation(page,menu2)
+
+
+mixin socials
+  .socials
+    a(href="http://twitter.com/targetsteele", target="_blank"): i.fa.fa-twitter
+    a(href="http://facebook.com/targetsteele", target="_blank"): i.fa.fa-facebook
+
+
+
+
+
+mixin footer
+  footer
+    .container.logotypes
+      a(href="haste.html", data-sr): img(src="_/img/logo_haste.png", alt="Haste")
+      a(href="lifetrak.html", data-sr): img(src="_/img/logo_lifetrak.png", alt="LifeTrak")
+      a(href="asics.html", data-sr=): img(src="_/img/logo_asics.png", alt="Asics")
+      a(href="http://www.supplychain.com.mx/", target="_blank", data-sr="enter right"): img(src="_/img/logo_supplychain.png", alt="Supply Chain")
+      a(href="http://www.grupoei.com.mx/", target="_blank", data-sr="enter right"): img(src="_/img/logo_grupoei.png", alt="Grupo Ei")
+    #footer
+      .container.tocenter
+        a(href="#")#toTop: i.fa.fa-arrow-up
+        br
+        br
+        p Digi Target S.A. de C.V. 2015
+        p 
+          a(href="http://www.smartlab.com.mx/", target="_blank") Desarrollo Web
+          |  por Smartlab
+      

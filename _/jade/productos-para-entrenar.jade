@@ -1,0 +1,60 @@
+include _config.jade
+include _mixins.jade
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      section.container
+      .breadcrumbs.c12
+        a(href="index.html") Inicio
+        | > 
+        a(href="asics.html") Asics
+
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/asics_entrenar_banner.jpg", alt="Asics")
+            
+        .container
+          .mt50
+            h1.c14 Productos para entrenar
+            article(data-sr).c3.p2
+              a(href="asics-ap01.html")
+                .desc A la persona que quiere gestionar el campo.
+                .img: img(src="_/img/asics_ap01.jpg", alt="")
+                .name AP01
+            article(data-sr="wait 0.5s").c3
+              a(href="asics-ah01.html")
+                .desc A la persona que quiere entrar su ritmo cardiaco.
+                .img: img(src="_/img/asics_ah01.jpg", alt="")
+                .name AH01
+            article(data-sr="wait 1s").c3
+              a(href="asics-ar06.html")
+                .desc A la persona que quiere entrenar por intervalos.
+                .img: img(src="_/img/asics_ar06.jpg", alt="")
+                .name AR06
+        .container
+            article(data-sr="wait 1.5s").new.c3.p4
+              a(href="asics-ag01.html")
+                .desc Fácil medición y gestión de datos mediante GPS satelital.
+                .img: img(src="_/img/asics_ag01.jpg", alt="")
+                .name AG01
+            article(data-sr="wait 2s").new.c3
+              a(href="asics-ap02.html")
+                .desc Fácil sincronización con MY ASICS.
+                .img: img(src="_/img/asics_ap02.jpg", alt="")
+                .name AP02
+            
+        
+          
+      hr.mb50
+
+      +footer
+    +scripts

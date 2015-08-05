@@ -1,0 +1,143 @@
+include _config.jade
+include _mixins.jade
+include lifetrakMixin.jade
+
+- var watch = "R450";
+
+
+
+
+doctype html
+html(lang="es")
+  head
+    +head("LifeTrak "+watch+" | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('lifetrak')
+      +breadcrumbs('Brite '+watch)
+        
+      
+      section.content.lifetrak
+        .container
+          
+      
+      section(style="background-image:url(_/img/#{watch}_bg.jpg);").full.lifetrak
+        .container
+          .c6.p1
+            h1(data-sr) LifeTrak Brite #{watch}
+        hr
+        .container.mt20
+          .c4
+            .main
+              a(href="_/img/#{watch}_1.jpg", data-featherlight="image"): img(src="_/img/#{watch}_1.jpg", alt="")
+            .gal
+              a(href="_/img/#{watch}_1.jpg", data-featherlight="image"): img(src="_/img/#{watch}_1.jpg", alt="")
+              a(href="_/img/#{watch}_2.jpg", data-featherlight="image"): img(src="_/img/#{watch}_2.jpg", alt="")
+              a(href="_/img/#{watch}_3.jpg", data-featherlight="image"): img(src="_/img/#{watch}_3.jpg", alt="")
+          .c10
+            h2 Vida en Seguimiento: Fitness en un nivel completamente nuevo. 
+            p Salud y fitness es más que sólo actividad. Es también el medio ambiente y la gente que te rodea. Es por eso que LifeTrak Brite R450 incluye LightTrak, Notificaciones, SleepTrak 2.0, así como el seguimiento de la frecuencia cardíaca y la actividad exacta de ECG de LifeTrak. LightTrak de Brite monitorea tu exposición a los niveles de luz general y luz azul y te permite saber cuando se necesita mayor o menor exposición a la luz, por lo que puede mejorar tus niveles de estado de ánimo y la energía durante el día y prepararse para una buena noche de descanso. Brite te mantiene motivado con las notificaciones de fitness. También te permite mantenerte al tanto con las notificaciones desde tu muñeca, desde tu smartphone compatible, por lo que no te perderás de ningún momento con la gente que te importa. Después de un día ocupado, el Brite SleepTrak II se encarga de tu noche. Incluye toda la tecnología avanzada de SleepTrak además de nuestra nueva función de despertador inteligente, que utiliza los datos de calidad del sueño para que te despierte suavemente en el momento óptimo, por lo que se inicia el nuevo día sintiéndose renovado. Aún más sorprendente es que Brite tiene todo esto y lleva nuestras firmas LifeTrak de ninguna batería de carga requerida, resistencia al agua hasta 30 metros y bandas ComfortFit reversibles e intercambiables. 
+            p.mt20: a(href="https://www.youtube.com/embed/J_53BN5sDgU?rel=0&amp;controls=0&amp;showinfo=0", data-featherlight="iframe", data-featherlight-iframe-width="750px", data-featherlight-iframe-height="420px").btn
+              i.fa.fa-play
+              |  Mira el Brite R450 en acción.
+  
+        hr.mtb50
+        .mt20.funcionalidades
+          .container
+            .c8
+              h3 Principales características
+              +ECG
+              +LT
+              +NOT
+              +SLP
+              +SEG
+              +APP
+              +BAT
+              +EXT
+              +ON
+                            
+              
+            .c6
+              | <iframe src="http://lifetrakusa.com/wp-content/themes/lifetrak/woocommerce/3d/brite-r450/variations/brite-r450-arctic-white-orchid/iframe.html" style="height: 500px; width:100%;"></iframe>
+              .pantallas
+                h3 Pantallas de App Connected
+                a(href="_/img/pantalla-#{watch}_1.png", data-featherlight="image")
+                  .img: img(src="_/img/pantalla-#{watch}_1.png", alt="")
+                  .text Brite #{watch} : Smartphone Notification Settings
+                a(href="_/img/pantalla-#{watch}_2.png", data-featherlight="image")
+                  .img: img(src="_/img/pantalla-#{watch}_2.png", alt="")
+                  .text Brite #{watch} : Smartphone Notification Settings
+                a(href="_/img/pantalla-#{watch}_3.png", data-featherlight="image")
+                  .img: img(src="_/img/pantalla-#{watch}_3.png", alt="")
+                  .text Brite #{watch} : Smartphone Notification Settings
+                a(href="_/img/pantalla-#{watch}_4.png", data-featherlight="image")
+                  .img: img(src="_/img/pantalla-#{watch}_4.png", alt="")
+                  .text Brite #{watch} : Smartphone Notification Settings
+                a(href="_/img/pantalla-#{watch}_5.png", data-featherlight="image")
+                  .img: img(src="_/img/pantalla-#{watch}_5.png", alt="")
+                  .text Brite #{watch} : Smartphone Notification Settings
+              .compatibilidad
+                h3 *Compatible con:
+                ul
+                  li iOS 7 y dispositivos superiores: iPhone 4S, 5 , 5C , 5S , 6 , 6 Plus ; iPad 4 ; Aire iPad ; iPad Mini, Retina ; iPod Touch 5 .
+                  li Seleccione los dispositivos Android (versiones 4.3.x , 4.4.x OS , 5.0.X ) : Samsung Galaxy S6 , Samsung Galaxy 5 , Samsung Galaxy 4 , Nota III , LG Nexus 5 , HTC Uno M8 y Motorola Moto G.
+                p <strong>Nota</strong>: Para los propietarios de Samsung Galaxy Note S5 y III , los problemas de conectividad que experimentan con Move C300 y C410 Zona / C410w es un problema con Bluetooth y Android 5.0 para el teléfono. Sabemos que nuestro C300 Mover y Zona C410 / C410w funciona bien con Samsung Galaxy S6 y Android 5.0.2 . Por lo tanto, todos vamos a tener que esperar para Samsung solucionar el tema en su próxima actualización de Android 5.0 para S5 , y Nota III . Vea la página Get Connected para la información más reciente . See the Get Connected page for the latest information.
+    
+        .mt20.funcionalidades.especificaciones
+          .container
+            .c14: h3 Especificaciones técnicas
+          .container
+            .c6.p1
+              p: strong Ritmo card&iacute;aco:
+              ul
+                li 30-240 bpm
+              p: strong Modo entrenamiento :
+              ul
+                li Rango de cron&oacute;grafo : 9 h, 59 min , 59 seg
+                li Calor&iacute;as : 0-99,999
+                li Pasos: 0-99,999 pasos
+                li Distance: 0-621.3 mi / 0-999.9 km
+              p: strong Tiempo:
+              ul
+                li Distance: 0-621.3 mi / 0-999.9 km &bull; AM, PM , hora , minuto , segundo
+                li Formato de 12/24 horas
+              p: strong User Configuraci&oacute;n de usuario :
+              ul
+                li Sexo: M / F
+                li &bull; Rango de edad : 5-99 a&ntilde;os
+                li Altura (in / cm ) Rango : 40 a 84 en / 100-220 cm
+                li Peso ( libras / kg ) Rango : 44 a 440 libras / 20-200kg sensibilidad Paso
+              p: strong Batería:
+              ul
+                li CR2032 tipo botón reemplazable
+            .c6
+              p: strong Resistente Al Agua:
+              ul
+                  li Sumergible : 30 m
+              p: strong Garant&iacute;a::
+              ul
+                li Un ( 1 ) a&ntilde;o ; excluyendo la bater&iacute;a
+              p: strong Dimensiones:
+              ul
+                li Longitud total con banda ajustable ( max) : 217mm
+                li El tama&ntilde;o de la cabeza del reloj (di&aacute;metro ) : 42 mm
+                li Tama&ntilde;o del LCD (di&aacute;metro ) : 27 mm
+              p: strong Adicional:
+              ul
+                li Luz de fondo
+                li Banda de poliuretano ajustable y duradera con mecanismo de bloqueo SureSnap Broche para facilitar el cierre
+                li Lente de policarbonato resistente a los impactos
+                li Choque Fiable probado para 8 kV y 15 kV Contacto Aire ( IEC6100-4-2 )
+                li FCC, CE , RoHS obediente
+
+
+            
+          
+      hr.mb50
+
+      +footer
+    +scripts
+
+
+
+

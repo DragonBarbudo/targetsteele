@@ -1,0 +1,51 @@
+include _config.jade
+include _mixins.jade
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      
+      
+      section.content.asics
+        .container(data-sr)
+          .c6.p1
+            p ASICS es el nombre comercial de ASICS Corporation, fabricante Japonés de artículos deportivos ampliamente conocido por zapatos deportivos profesionales, calzado y ropa deportiva.
+            p El calzado para maratones, atletismo, baloncesto y voleibol son muy populares y se identifican fácilmente con la marca <strong>ASICS</strong>.
+          .c6
+            p El nombre ASICS es un acrónimo derivado de "Anima Sana en Corpore Sano" - A, S, I, C, S - que se traduce como "Mente sana en un cuerpo sano". La frase original en latín por el escritor romano Décimo Junio Juvenal era Anima sana in corpore sano.
+        .container
+          .c8.p3(data-sr="enter bottom")
+            blockquote.tocenter Originalmente, ánima (alma) se describe como hombre (inteligencia), pero hombre se ha cambiado por ánima, para que, ASICS sugiera un enfoque más activo.
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/asics_banner.jpg", alt="Asics")
+            
+        .container
+          .mt50
+            .c8.p3(data-sr="enter top")
+              blockquote Los relojes deportivos ASICS están diseñados con la tradición del calzado ASICS, basados en la alta calidad y con tecnología avanzada ganando la lealtad de muchos de los mejores atletas del mundo.
+          .container(data-sr="enter right")
+            .c6.p1
+              p Con su forma inspiradora, que significa energía positiva bajo el temas "Reto" y "Confianza", estos relojes emplean un diseño ergonómico que le da libertad de movimiento a la muñeca. El resultado es un fácil manejo, fácil visualización y fácil operación, todo logrado a un alto nivel.
+            .c6
+              p Los relojes ASICS cumplen con todas las funciones y comodidades que necesitan los corredores, incluyendo botones establecidos para facilitar su operación y la pantalla de cristal lo más amplia posible.
+        
+        .container
+          .c6.p1.pcorrerCont
+            a(href="productos-para-correr.html").pcorrer
+              img(src="_/img/asics_correr_txt.png", alt="Para Correr")
+          .c6.pentrenarCont
+            a(href="productos-para-entrenar.html").pentrenar
+              img(src="_/img/asics_entrenar_txt.png", alt="Para Entrenar")
+            
+          
+      hr.mb50
+
+      +footer
+    +scripts

@@ -1,0 +1,89 @@
+include _config.jade
+include _mixins.jade
+include asicsMixin.jade
+
+- var watch = "ag01";
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      +breadcrumbsE('AG01')
+      
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/#{watch}_banner.jpg", alt="Asics")
+            .tocenter
+              img(src="_/img/#{watch}_fn.jpg", alt="")
+            
+        .container.asicswatch
+          .mt50
+            h1.c10.p2 Fácil medición y gestión de los datos con los satélites GPS.
+            h3.c10.p2 Mide distancia , velocidad y ritmo.
+            h3.c10.p2 Gran visibilidad con la pantalla LCD.
+            h3.c10.p2 Gestión de datos con una aplicación original .
+            h3.c10.p2 El tiempo de activación cuando se utiliza el GPS es de 10 horas .
+
+            article(data-sr).c3.p5
+              div
+                .img: img(src="_/img/#{watch}_color_1.jpg", alt="")
+                .name CQAG0102 azul
+
+        .mt50
+        .container.specs(data-sr)
+          .c3
+            .blue SPECS
+          .c11.bg
+             ul.inlinelist
+              li ● Caja de plástico
+              li ● Vidrio acrílico
+              li ● Banda de uretano
+              li ● 5bar resistencia al agua
+              li ● Visualización del Tiempo 
+              li ● Modo Correr (distancia recorrida, la velocidad de carrera, ritmo , el consumo de calorías, distancia de la vuelta corriendo, tiempo fraccionado, tiempo de vuelta, visualización de la hora actual.
+              li ● Gráfico Crono ( Max 99 vueltas × 114 corriendo)
+              li ● Datos
+              li ● Alarma
+              li ● Temporizador contraste
+              li ● Luz de fondo de pantalla
+              li ● Ajustable
+              li ● Activar tiempo
+              li ● 10 horas activadas al usar GPS. (aprox 1 año sin usar GPS ) de carga
+              li ● Batería durante 3 horas.
+
+        .container.specs(data-sr="enter right")
+          .c3
+            .blue TAMAÑO
+          .c11.bg
+             ul.inlinelist
+              li ● Tamaño de la caja : 50.00mm ( 3-9h )
+              li ● Grosor de la caja : 17.00mm
+              li ● Peso (incluyendo banda) : 61g
+              li ● Tamaño de la muñeca : 155mm - 205mm
+        .container.specs(data-sr)
+          .c3
+            .blue COMPATIBILIDAD OS
+          .c11.bg
+             ul.inlinelist
+              li ● Windows : Windows 7 ( 32bit / 64bit) , Windows8 ( 32bit / 64bit)
+              li ● Mac : Mac OS X 10.7 , Mac OS X 10.8 , Mac OS X 10.9
+        
+
+
+
+
+
+
+
+          
+      hr.mb50
+
+      +footer
+    +scripts

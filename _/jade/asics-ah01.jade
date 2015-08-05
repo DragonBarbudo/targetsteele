@@ -1,0 +1,95 @@
+include _config.jade
+include _mixins.jade
+include asicsMixin.jade
+
+- var watch = "ah01";
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      
+      +breadcrumbsE('AH01')
+      
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/#{watch}_banner.jpg", alt="Asics")
+            .tocenter
+              img(src="_/img/#{watch}_fn.jpg", alt="")
+            
+            
+        .container
+          .c10.p2
+            p El reloj running " AH01 " mide y muestra la frecuencia cardíaca del corredor en tiempo real durante la carrera , al ser utilizado en combinación con el Cinturón de pecho ( suministrado con el reloj ) que tiene un sensor de ritmo cardíaco, que se tiene que llevar en el pecho por el corredor. Al introducir los datos del corredor y el género antes de correr, se calcula el "AT Heart Rate " del corredor de forma automática mediante el algoritmo desarrollado por el Instituto de Ciencias del Deporte ASICS , y proporciona diversa información que permite al corredor entrenar de manera eficiente y eficaz.
+
+            p "AT Heart Rate" y "AT Ritmo" serven como directrices para un entrenamiento efectivo y control del ritmo al correr durante las carreras, ayudando en la mejora de su rendimiento en carrera..
+
+            p “AT” es la abreviatura en inglés de "umbral anaeróbico", que se refiere al punto en el cuerpo pasa del ejercicio aeróbico al anaeróbico conforme la intensidad del ejercicio aumenta. La frecuencia cardiaca en este punto se llama el ritmo cardíaco AT.
+
+            
+        .container.asicswatch
+          .mt50
+            h1.c14.tocenter ¡Corre al beat!
+              
+            article(data-sr).c3.p4
+              div
+                .img: img(src="_/img/#{watch}_color_1.jpg", alt="")
+                .name CQAH0101 negro/rojo
+            article(data-sr="wait 0.5s").c3
+              div
+                .img: img(src="_/img/#{watch}_color_2.jpg", alt="")
+                .name CQAH0102 rosa/gris
+
+
+        .mt50
+        .container.specs(data-sr)
+          .c3
+            .blue SPECS
+          .c11.bg
+             ul.inlinelist
+              li ● Caja de plástico 
+              li ● Tapa inoxidable 
+              li ● Banda de uretano 
+              li ● 5bar resistente al agua 
+              li ● Cálculo de AT ritmo cardíaco (AT HR ) 
+              li ● Función Auto - HRM ● Medición función de comprobación 
+              li ● Pantalla gráfica de la frecuencia cardíaca 
+              li ● Función Zona Objetivo 
+              li ● Estimación de tiempo de finalización para maratón 
+              li ● Temporizador de Intervalos 
+              li ● Hora dual 
+              li ● Cronógrafo ( almacena hasta 300 mediciones de datos) 
+              li ● Función de registro de datos ( almacenamiento de la frecuencia cardíaca y datos carrera) 
+              li ● Doble temporizador 
+              li ● 3 canales alarma diaria 
+              li ● La función Auto - luz de fondo 
+              li ● Función " ECO " 
+              li ● Contraste de pantalla 
+              li ● Duración de la batería : Aprox. 2 años
+
+        .container.specs(data-sr="enter right")
+          .c3
+            .blue TAMAÑO
+          .c11.bg
+             ul.inlinelist
+              li ● Tamaño de la caja : 41.9 mm ( entre 3 y 9 en punto ) 
+              li ● Grosor de la caja: 11.96 mm 
+              li ● Peso: 44 g 
+              li ● Apoyado tamaño de la muñeca : 140-195 mm 
+
+
+
+
+
+
+      hr.mb50
+
+      +footer
+    +scripts

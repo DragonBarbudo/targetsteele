@@ -1,0 +1,79 @@
+include _config.jade
+include _mixins.jade
+include asicsMixin.jade
+
+- var watch = "ar01";
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      +breadcrumbsC('AR01')
+      
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/#{watch}_banner.jpg", alt="Asics")
+            .tocenter
+              img(src="_/img/#{watch}_fn.jpg", alt="")
+            
+        .container.asicswatch
+          .mt50
+            h1.c14.tocenter Combina tanto la ligereza y la delgadez, <br>así como la alta calidad de la visibilidad y facilidad de uso.
+
+              
+            article(data-sr).c3.p4
+              div
+                .img: img(src="_/img/#{watch}_color_1.jpg", alt="")
+                .name AR01 Regular
+            article(data-sr="wait 0.5s").c3
+              div
+                .img: img(src="_/img/#{watch}_color_2.jpg", alt="")
+                .name CQAR0103 amarillo
+        .mt50
+          .container.specs(data-sr)
+            .c3
+              .blue SPECS
+            .c11.bg
+               ul.inlinelist
+                li ● Plástico
+                li ● Caja Acero inoxidable
+                li ● Vidrio Mineral
+                li ● banda uretano
+                li ● 5bar pantalla resistencia al agua
+                li ● Hora ( hora dual )
+                li ● Cronógrafo (memoria vueltas 500 )
+                li ● Datos ( Sensibilidad / entrada memo disponible)
+                li ● Timer ( temporizador doble repetición)
+                li ● Alarma ( alarma diaria de 3 canales )
+                li ● Luz de fondo
+                li ● Función de ahorro de energía
+                li ● Pantalla de ajuste de contraste
+                li ● Duración de la batería de tres años
+
+          .container.specs(data-sr="enter right")
+            .c3
+              .blue TAMAÑO
+            .c11.bg
+               ul.inlinelist
+                li ● Tamaño de la caja : 39.0mm ( entre 3 y 9 en punto )
+                li ● Grosor de la caja : 10.0mm
+                li ● Peso (incluida la banda) : 38g
+                li ● Tamaño Muñeca conveniente : 130mm a 190mm
+
+
+              
+           
+
+
+          
+      hr.mb50
+
+      +footer
+    +scripts

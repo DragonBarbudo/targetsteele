@@ -1,0 +1,113 @@
+include _config.jade
+include _mixins.jade
+include lifetrakMixin.jade
+
+- var watch = "C200";
+
+
+
+
+doctype html
+html(lang="es")
+  head
+    +head("LifeTrak "+watch+" | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('lifetrak')
+      +breadcrumbs('Core '+watch)
+      
+      
+      section.content.lifetrak
+        .container
+          
+      
+      section(style="background-image:url(_/img/#{watch}_bg.jpg);").full.lifetrak
+        .container
+          .c6.p1
+            h1(data-sr) LifeTrak Core #{watch}
+        hr
+        .container.mt20
+          .c4
+            .main
+              a(href="_/img/#{watch}_1.jpg", data-featherlight="image"): img(src="_/img/#{watch}_1.jpg", alt="")
+
+          .c10
+            h2 Preciso, simple, fácil de usar.
+            p Básico no significa aburrido. Nuestro Lifetrak Core C200 es siempre duro en el trabajo , proporcionando un registro claro de la actividad diaria . Lecturas del ritmo cardíaco exactas disponibles en un formato rápido para el calculo preciso de calorías quemadas, pasos y la distancia recorrida. Todo visible con el toque de un botón. Modo de entrenamiento y progreso por separado con los datos precisos . Con la pantalla disponible en cualquier momento, no tienes que sincronizar para ver tu progreso. Siempre encendido significa que no hay recarga de la batería , nunca. Sin lujos, los resultados.
+            p.mt20: a(href="https://www.youtube.com/embed/1lwztTP7iAg?rel=0&amp;controls=0&amp;showinfo=0", data-featherlight="iframe", data-featherlight-iframe-width="750px", data-featherlight-iframe-height="420px").btn
+              i.fa.fa-play
+              |  Mira el Core #{watch} en acción.
+  
+        hr.mtb50
+        .mt20.funcionalidades
+          .container
+            .c8
+              h3 Principales características
+              +ECG
+              +SEG
+              +ON
+              +BAT
+              +EXT
+            .c6
+              | <iframe src="http://lifetrakusa.com/wp-content/themes/lifetrak/woocommerce/3d/core-c200/variations/core-c200-midnight-black-arctic-white/iframe.html" style="height: 500px; width:100%;"></iframe>
+              
+              
+    
+        .mt20.funcionalidades.especificaciones
+          .container
+            .c14: h3 Especificaciones técnicas
+          .container
+            .c6.p1
+              p: strong Ritmo card&iacute;aco:
+              ul
+                li 30-240 bpm
+              p: strong Modo entrenamiento :
+              ul
+                li Rango de cron&oacute;grafo : 9 h, 59 min , 59 seg
+                li Calor&iacute;as : 0-99,999
+                li Pasos: 0-99,999 pasos
+                li Distance: 0-621.3 mi / 0-999.9 km
+              p: strong Tiempo:
+              ul
+                li Distance: 0-621.3 mi / 0-999.9 km &bull; AM, PM , hora , minuto , segundo
+                li Formato de 12/24 horas
+              p: strong User Configuraci&oacute;n de usuario :
+              ul
+                li Sexo: M / F
+                li &bull; Rango de edad : 5-99 a&ntilde;os
+                li Altura (in / cm ) Rango : 40 a 84 en / 100-220 cm
+                li Peso ( libras / kg ) Rango : 44 a 440 libras / 20-200kg sensibilidad Paso
+              p: strong Batería:
+              ul
+                li CR2032 tipo botón reemplazable
+            .c6
+              p: strong Resistente Al Agua:
+              ul
+                  li Sumergible : 30 m
+              p: strong Garant&iacute;a::
+              ul
+                li Un ( 1 ) a&ntilde;o ; excluyendo la bater&iacute;a
+              p: strong Dimensiones:
+              ul
+                li Longitud total con banda ajustable ( max) : 217mm
+                li El tama&ntilde;o de la cabeza del reloj (di&aacute;metro ) : 42 mm
+                li Tama&ntilde;o del LCD (di&aacute;metro ) : 27 mm
+              p: strong Adicional:
+              ul
+                li Luz de fondo
+                li Banda de poliuretano ajustable y duradera con mecanismo de bloqueo SureSnap Broche para facilitar el cierre
+                li Lente de policarbonato resistente a los impactos
+                li Choque Fiable probado para 8 kV y 15 kV Contacto Aire ( IEC6100-4-2 )
+                li FCC, CE , RoHS obediente
+
+
+            
+          
+      hr.mb50
+
+      +footer
+    +scripts
+
+
+
+

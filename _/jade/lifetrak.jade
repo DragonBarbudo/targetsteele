@@ -1,0 +1,163 @@
+include _config.jade
+include _mixins.jade
+
+
+mixin ECG
+  img(src="_/img/lt_icon-ecg.png", alt="EGC", class="tooltip", title="EGC Rítmo cardiáco Exacto")
+mixin ON
+  img(src="_/img/lt_icon-on.png", alt="ON", class="tooltip", title="Siempre encendido")
+mixin SEG
+  img(src="_/img/lt_icon-seg.png", alt="SEG", class="tooltip", title="Seguimiento exacto")
+mixin BAT
+  img(src="_/img/lt_icon-bat.png", alt="BAT", class="tooltip", title="Batería de larga vida contra-agua")
+mixin EXT
+  img(src="_/img/lt_icon-ext.png", alt="EXT", class="tooltip", title="Extensibles adaptables ComfortFit")
+mixin SLP
+  img(src="_/img/lt_icon-slp.png", alt="SLP", class="tooltip", title="SleepTrak 2.0")
+mixin SLP1
+  img(src="_/img/lt_icon-slp1.png", alt="SLP1", class="tooltip", title="SleepTrak")
+mixin APP
+  img(src="_/img/lt_icon-app.png", alt="APP", class="tooltip", title="Conectado a la app")
+mixin NOT
+  img(src="_/img/lt_icon-not.png", alt="NOT", class="tooltip", title="Notificaciones")
+mixin LT
+  img(src="_/img/lt_icon-lt.png", alt="LT", class="tooltip", title="LightTrak")
+mixin OFF
+  img(src="_/img/lt_icon-off.png", alt="",)
+
+doctype html
+html(lang="es")
+  head
+    +head("LifeTrak | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('lifetrak')
+      
+     
+      
+      section.content.lifetrak
+        .container
+          .c6.p1
+            h1(data-sr) Modelos LifeTrak
+          .c6
+            p(data-sr="enter right") LifeTrak es el socio rastreador de fitness y bienestar más exacto que se integra perfectamente en tu vida porque sólo <strong>LifeTrak</strong> tiene el legado y la tecnología para utilizar la frecuencia cardiaca tanto como un método para asegurar la precisión, así como la medición de la salud.
+        
+        .container.watches
+          article(data-sr)
+            a(href="lifetrak-R450.html")
+              img(src="_/img/lifetrak_r450.png", alt="R450")
+              .name(style="background: #1074CB; ") LifeTrak Brite R450
+            .functions
+              +APP
+              +BAT
+              +ECG
+              +EXT
+              +LT
+              +NOT
+              +ON
+              +SEG              
+              +SLP
+          article(data-sr="wait 0.5s")
+            a(href="lifetrak-C410.html")
+              img(src="_/img/lifetrak_c410.png", alt="C410")
+              .name(style="background: #2F93BD;") LifeTrak Zone C410
+            .functions
+              +APP
+              +BAT
+              +ECG
+              +EXT
+              +OFF
+              +OFF
+              +ON
+              +SEG
+              +SLP1
+          article(data-sr="wait 1s")
+            a(href="lifetrak-C300.html")
+              img(src="_/img/lifetrak_c300.png", alt="C300")
+              .name(style="background: #5DBCE5;") LifeTrak Move C300
+            .functions
+              +APP
+              +BAT
+              +ECG
+              +EXT
+              +OFF
+              +OFF
+              +ON
+              +SEG
+              +OFF
+          article(data-sr="wait 1.5s")
+            a(href="lifetrak-C210.html")
+              img(src="_/img/lifetrak_c210.png", alt="C210")
+              .name(style="background: #66A842;") LifeTrak Core C210
+            .functions
+              +OFF
+              +BAT
+              +ECG
+              +EXT
+              +OFF
+              +OFF
+              +ON
+              +SEG
+              +SLP1
+          article(data-sr="wait 2s")
+            a(href="lifetrak-C200.html")
+              img(src="_/img/lifetrak_c200.png", alt="C200")
+              .name(style="background: #74BD4C;") LifeTrak Core C200
+            .functions
+              +OFF
+              +BAT
+              +ECG
+              +EXT
+              +OFF
+              +OFF
+              +ON
+              +SEG
+              +OFF
+        hr.mtb50
+        
+        .container.glosario(data-sr)
+          div.c4
+            img(src="_/img/lt_icon-app.png", alt="APP",  title="Conectado a la app")
+            |  Conectado a la app
+          div.c4.p1
+            img(src="_/img/lt_icon-bat.png", alt="BAT",  title="Batería de larga vida contra-agua")
+            |  Batería de larga vida contra-agua
+          div.c4.p1
+            img(src="_/img/lt_icon-ecg.png", alt="EGC",  title="EGC Rítmo cardiáco Exacto")
+            |  EGC Rítmo cardiáco Exacto
+        .container.glosario(data-sr="enter right")
+          div.c4
+            img(src="_/img/lt_icon-ext.png", alt="EXT",  title="Extensibles adaptables ComfortFit")
+            |  Extensibles adaptables ComfortFit
+          div.c4.p1
+            img(src="_/img/lt_icon-lt.png", alt="LT",  title="LightTrak")
+            |  LightTrak
+          div.c4.p1
+            img(src="_/img/lt_icon-not.png", alt="NOT",  title="Notificaciones")
+            |  Notificaciones
+        .container.glosario(data-sr)
+          div.c4
+            img(src="_/img/lt_icon-on.png", alt="ON",  title="Siempre encendido")
+            |  Siempre encendido
+          div.c4.p1
+            img(src="_/img/lt_icon-seg.png", alt="SEG",  title="Seguimiento exacto")
+            |  Seguimiento exacto
+          div.c4.p1
+            img(src="_/img/lt_icon-slp.png", alt="SLP",  title="SleepTrak 2.0")
+            |  SleepTrak 2.0
+        
+        
+        
+
+
+          
+            
+          
+      hr.mb50
+
+      +footer
+    +scripts
+
+
+
+

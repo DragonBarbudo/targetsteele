@@ -1,0 +1,51 @@
+mixin specs
+  .container.specs(data-sr)
+    .c3
+      .blue SPECS
+    .c11.bg
+       ul.inlinelist
+        li ●Plastic case
+        li ●Stainless-steel caseback
+        li ●Mineral glass
+        li ●Urethane band
+        li ●5bar Water Resistance
+        li ●Time display (dual time)
+        li ●Chronograph (500 lap memory)
+        li ●Data (recall / memo input available)
+        li ●Timer (double repeat timer)
+        li ●Alarm (3-channel daily alarm)
+        li ●Backlight
+        li ●Power saving function
+        li ●Display contrast adjustment
+        li ●Three-year battery life
+  .container.specs(data-sr="enter right")
+    .c3
+      .blue SIZE
+    .c11.bg
+       ul.inlinelist
+        li ●Case size : 39.0mm (between 3 and 9 o'clock positions)
+        li ●Case thickness : 10.0mm
+        li ●Weight (including band) : 38g
+        li ●Suitable wrist size : 130mm to 190mm
+
+mixin breadcrumbsC(watch)
+  section.container
+    .breadcrumbs.c12
+      a(href="index.html") Inicio
+      | > 
+      a(href="asics.html") Asics 
+      | > 
+      a(href="productos-para-correr.html") Productos para correr 
+      | > 
+      span.name Asics #{watch}
+
+mixin breadcrumbsE(watch)
+  section.container
+    .breadcrumbs.c12
+      a(href="index.html") Inicio
+      | > 
+      a(href="asics.html") Asics 
+      | > 
+      a(href="productos-para-entrenar.html") Productos para entrenar 
+      | > 
+      span.name Asics #{watch}

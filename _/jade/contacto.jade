@@ -1,0 +1,39 @@
+include _config.jade
+include _mixins.jade
+
+doctype html
+html(lang="es")
+  head
+    +head(titulo + " | " , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('contacto')
+      
+      
+      #map-contact
+      
+      section.content.inicio
+        .container
+          .c11
+            | <iframe id="blockrandom" name="iframe" src="http://targetsteele.com/contact/" width="100%" height="620" scrolling="auto" frameborder="1" class="wrapper">Esta opción no funcionará correctamente. Desafortunadamente, su navegador no soporta Inline Frames.</iframe>
+            
+          aside.c3
+            article
+              .title Twitter
+              .widget 
+                | <a class="twitter-timeline" href="https://twitter.com/TargetSteele" data-widget-id="613293055924244480">Tweets por el @TargetSteele.</a>
+                |<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            
+            article
+              .title Facebook
+              .widget
+                | <div id="fb-root"></div>
+                | <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3&appId=149522158451585"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+                | <div class="fb-like" data-href="http://facebook.com/targetsteele" data-width="200" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      
+      +footer
+    
+    script(src="http://maps.google.com/maps/api/js?sensor=true")
+    script(src="_/js/_/gmaps.js")
+    +scripts
+    

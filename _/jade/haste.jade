@@ -1,0 +1,60 @@
+include _config.jade
+include _mixins.jade
+
+doctype html
+html(lang="es")
+  head
+    +head("HASTE La Hora de México | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('haste')
+      
+      .container
+        ul.rslides(data-sr="enter bottom")
+          li
+            img(src="_/img/haste_banner.jpg", alt="La Hora de México")
+            img(src="_/img/haste_pleca_banner.png", alt="")
+          li
+            img(src="_/img/haste_banner_2.jpg", alt="La Hora de México")
+            img(src="_/img/haste_pleca_banner.png", alt="")
+          li
+            img(src="_/img/haste_banner_3.jpg", alt="La Hora de México")
+            img(src="_/img/haste_pleca_banner.png", alt="")
+      
+      section.content.haste
+        .container
+          .c6.p1
+            p(data-sr).lorange Cuando alguien escucha el nombre de <strong>Haste</strong> lo relaciona inmediatamente con México. La marca que trajo a la gente mexicana un reloj que podían llamar suyo. 
+            p(data-sr).lgray Un reloj que ha evolucionado con el tiempo y con los gustos de la gente mexicana. Cuenta con diseños modernos y al día para caballeros y damas que buscan estar a la moda a un precio accesible sin renunciar a ningún tipo de calidad.
+          
+          .c6
+            blockquote.tocenter(data-sr="enter right") Un reloj elegante con gran aceptación por el mercado mexicano.
+            p.simple.tocenter(data-sr="enter right") Hablar de Haste es sinónimo de calidad y garantía, ya que por más de noventa años ha sido, y siempre será: 
+            .slogan(data-sr="enter right")
+              i.fa.fa-quote-left
+              h3 LA HORA DE MÉXICO
+              i.fa.fa-quote-right
+           
+        .container
+          hr.mtb50
+          .tocenter(data-sr="enter top")
+            img(src="_/img/logo_haste_principal.png", alt="Haste")
+          .clearfix.mt50
+          a(href="haste-dama.html").modelos
+            .c3.toright
+              p Modelos para
+              h4 DAMA
+            .c4
+              img(src="_/img/haste_modelo_dama.jpg", alt="Modelos para Dama")
+          a(href="haste-caballero.html").modelos
+            .c4
+              img(src="_/img/haste_modelo_caballero.jpg", alt="Modelos para Caballero")
+            .c3.toleft
+              p Modelos para
+              h4 CABALLERO
+            
+          
+      hr.mb50
+
+      +footer
+    +scripts

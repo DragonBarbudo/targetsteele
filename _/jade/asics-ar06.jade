@@ -1,0 +1,97 @@
+include _config.jade
+include _mixins.jade
+include asicsMixin.jade
+
+- var watch = "ar06";
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      +breadcrumbsE('AR06')
+      
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/#{watch}_banner.jpg", alt="Asics")
+            .tocenter
+              img(src="_/img/#{watch}_fn.jpg", alt="")
+            
+        .container.asicswatch
+          .mt50
+            h1.c14.tocenter Te lleva a un entrenamiento de intervalos eficiente. 
+              
+            article(data-sr).c3.p2
+              div
+                .img: img(src="_/img/#{watch}_color_1.jpg", alt="")
+                .name CQAR0602 azul marino
+            article(data-sr).c3
+              div
+                .img: img(src="_/img/#{watch}_color_2.jpg", alt="")
+                .name CQAR0603 rojo
+            article(data-sr).c3
+              div
+                .img: img(src="_/img/#{watch}_color_3.jpg", alt="")
+                .name CQAR0605 negro/negro
+        .container.asicswatch
+         
+            h2.c10.p2 El " AR06 " ajusta automáticamente el tiempo objetivo óptimo para cada fase del entrenamiento de intervalos de acuerdo a la capacidad de correr del corredor.
+            .c10.p2
+              p Sólo mediante la introducción de su género, el mejor tiempo durante una carrera de 5 km , y el número de sets de entrenamiento de intervalo , los tiempos objetivo óptimos se calculan utilizando un algoritmo desarrollado por EL Instituto de Ciencias del Deporte ASICS . El reloj muestra el lapso de tiempo objetivo en la pantalla, y suena un pitido cuando expira cada intervalo , para ayudar al corredor a llevar un  entrenamiento a intervalos con eficacia.
+            h2.c10.p2 Entrenamiento de intervalos. 
+            .c10.p2
+              p El entrenamiento del intervalo consiste en dos fases en las que el corredor corre a una velocidad rápida o sprints y corre a una velocidad lenta o trota . Alternando las fases de forma continua, este método de entrenamiento puede fortalecer los músculos de las piernas del corredor , así como las funciones cardíacas y pulmonares de manera eficiente , aumentando así la velocidad de carrera .
+              
+              img(src="_/img/ar06_function.gif", alt="")
+
+                
+            
+            
+        .mt50
+        .container.specs(data-sr)
+          .c3
+            .blue SPECS
+          .c11.bg
+             ul.inlinelist
+              li ● Caja de Plástico 
+              li ● Bisel de Acero inoxidable 
+              li ● Tapa de acero inoxidable 
+              li ● Vidrio acrílico 
+              li ● Banda de uretano 
+              li ● 5 bar Resistente al agua 
+              li ● Temporizador de intervalos 
+              li ● Cronógrafo 1/100 Sec ( 150 Vueltas ) 
+              li ● 2 canales Temporizador (Doble repetición) 
+              li ● Alarma 3 canales (Diario) 
+              li ● Historial datos ( cronógrafo ) 
+              li ● Luz de fondo LED 
+              li ● Función ahorro de energía 
+              li ● Pantalla de ajuste 
+              li ● Vida de la Batería : Aprox. 3 años
+
+        .container.specs(data-sr="enter right")
+          .c3
+            .blue TAMAÑO
+          .c11.bg
+             ul.inlinelist
+              li ● Tamaño de la caja : 44.9 mm ( entre 3 y 9 en punto ) 
+              li ● Grosor de la caja: 12.06 mm 
+              li ● Peso: 42 g 
+              li ● Tamaño Muñeca conveniente : 130 a 190 mm
+
+
+              
+           
+
+
+          
+      hr.mb50
+
+      +footer
+    +scripts

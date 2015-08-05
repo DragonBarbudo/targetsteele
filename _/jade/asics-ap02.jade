@@ -1,0 +1,96 @@
+include _config.jade
+include _mixins.jade
+include asicsMixin.jade
+
+- var watch = "ap02";
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      +breadcrumbsE('AP02')
+      
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/#{watch}_banner.jpg", alt="Asics")
+            .tocenter
+              img(src="_/img/#{watch}_fn.jpg", alt="")
+            
+        .container.asicswatch
+          .mt50
+            h1.c10.p2 Usted puede fácilmente reticular con "MIS ASICS".
+            h3.c10.p2 Medir la distancia corriendo, el ritmo y los pasos por minuto.
+            h3.c10.p2 Fácil de manejar tu plan de entrenamiento. Fácil operación con 3 botones + un switch.
+            .c10.p2
+              p Altura , peso ... tu puedes configurar estos ajustes fácilmente mediante el uso la aplicación original en PCs o teléfonos inteligentes. ¡ Muy pronto el plan de entrenamiento MI ASICS estará en tu reloj! 
+            article(data-sr).c3.p5
+              div
+                .img: img(src="_/img/#{watch}_color_1.jpg", alt="")
+                .name CQAP0201 negro/plata
+
+        .mt50
+          .container.specs(data-sr)
+            .c3
+              .blue SPECS
+            .c11.bg
+               ul.inlinelist
+                li ● Caja de plástico
+                li ● Tapa de Acero inoxidable 
+                li ● Cristal mineral 
+                li ● banda uretano 
+                li ● 5bar resistencia al agua 
+                li ● SPM : Pasos por minuto 
+                li ● Ritmo y Distancia 
+                li ● NFC 
+                li ● MI ASICS SYNC 
+                li ● Autocalibra SPM 
+                li ● Interruptor Tap 
+                li ● Función bojetivo SPM 
+                li ● Registro de datos de SPM 
+                li ● Sonidos de SPM 
+                li ● Cronógrafo (100 memoria vueltas) 
+                li ● Datos 
+                li ● Temporizador 
+                li ● Alarma ( alarma diaria de 1 canal ) 
+                li ● Luz de fondo 
+                li ● Ahorro de energía 
+                li ● Ajuste contraste de la pantalla
+                li ● Dos años de duración de la batería
+
+          .container.specs(data-sr="enter right")
+            .c3
+              .blue TAMAÑO
+            .c11.bg
+               ul.inlinelist
+                li ● Tamaño de la caja : 48.0mm ( entre 3 y 9 en punto )
+                li ● Grosor de la caja: 14.0mm
+                li ● Peso (incluida la banda) : 47g
+                li ● Tamaño Muñeca conveniente : 155mm a 205mm 
+          .container.specs(data-sr)
+            .c3
+              .blue COMPATIBILIDAD OS
+            .c11.bg
+               ul.inlinelist
+                li ● Windows: Windows7 (32bit/64bit),Windows8(32bit/64bit)
+                li ● Mac: Mac OS X 10.9
+                li ● Android:4.4 
+          .container.tocenter
+            .mt50
+              a(href="http://asics-watch.com/eg/common/sp/banner.jpg", target="_blank")
+                img(src="_/img/banner_myasics.jpg", alt="")
+
+           
+
+
+          
+      hr.mb50
+
+      +footer
+    +scripts

@@ -1,0 +1,81 @@
+include _config.jade
+include _mixins.jade
+include asicsMixin.jade
+
+- var watch = "ap01";
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      +breadcrumbsE('AP01')
+      
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/#{watch}_banner.jpg", alt="Asics")
+            .tocenter
+              img(src="_/img/#{watch}_fn.jpg", alt="")
+            
+        .container.asicswatch
+          .mt50
+            h1.c14.tocenter ¡Domina tu SPM !
+              
+            article(data-sr).c3.p2
+              div
+                .img: img(src="_/img/#{watch}_color_1.jpg", alt="")
+                .name CQAP0101 negro
+            article(data-sr="wait 0.5s").c3
+              div
+                .img: img(src="_/img/#{watch}_color_2.jpg", alt="")
+                .name CQAP0102 negro/plata
+            article(data-sr="wait 0.5s").c3
+              div
+                .img: img(src="_/img/#{watch}_color_3.jpg", alt="")
+                .name CQAP0104 rojo
+
+        .mt50
+        .container.specs(data-sr)
+          .c3
+            .blue SPECS
+          .c11.bg
+             ul.inlinelist
+              li ● Caja de plástico 
+              li ● Bisel de aluminio 
+              li ● Tapa de acero inoxidable 
+              li ● Cristal acrílico
+              li ● Banda uretano
+              li ● 5bar resistencia al agua 
+              li ● Medición de SPM (pasos por minuto) 
+              li ● Estimación de pasos y distancia
+              li ● Medición impacto de los Zapatos 
+              li ● Time ( hora dual ) 
+              li ● Cronógrafo ( 300 memoria vuelta ) 
+              li ● Datos ( Sensibilidad / SPM , medición pasos y  distancia, Memoria de 300 vueltas ) 
+              li ● Timer ( temporizador doble repetición) 
+              li ● alarma ( alarma diaria de 3 canales ) 
+              li ● Luz de fondo 
+              li ● Función de ahorro de energía 
+              li ● Ajuste en pantalla 
+              li ● Batería de dos años vida 
+        .container.specs(data-sr="enter right")
+          .c3
+            .blue TAMAÑO
+          .c11.bg
+             ul.inlinelist
+              li ● Tamaño de la caja : 45.0mm ( entre 3 y 9 en punto )
+              li ● Grosor de la caja: 12.0mm 
+              li ● Peso (incluida la banda) : 42g 
+              li ● Tamaño Muñeca conveniente : 155mm a 205mm 
+
+          
+      hr.mb50
+
+      +footer
+    +scripts

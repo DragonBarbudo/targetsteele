@@ -1,0 +1,82 @@
+include _config.jade
+include _mixins.jade
+include asicsMixin.jade
+
+- var watch = "ar08";
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      +breadcrumbsC('AR08')
+      
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/#{watch}_banner.jpg", alt="Asics")
+            .tocenter
+              img(src="_/img/#{watch}_fn.jpg", alt="")
+            
+        .container.asicswatch
+          .mt50
+            h1.c14.tocenter ¡Colorido reloj de correr LED!
+              
+            article(data-sr).c3.p5
+              div
+                .img: img(src="_/img/#{watch}_color_1.jpg", alt="")
+                .name CQAR0801 verde
+        
+        .container.asicswatch
+          .c10.p2
+            p: strong El LED destella continuamente y nos permite ver la pantalla de cristal líquido fácilmente ¡incluso en la oscuridad !
+            p El LED parpadea continuamente al pulsar el botón " NOCHE " durante 2 segundos, la luz LED comienza a parpadear durante 30 minutos. El LED destella continuamente mejorando  la visibilidad de la pantalla durante la oscuridad .
+            p: strong Carcasas coloridas
+            p Puedes elegir entre 4 variantes de color para que coincida con tu ropa de correr .
+
+        
+        .mt50
+          .container.specs(data-sr)
+            .c3
+              .blue SPECS
+            .c11.bg
+               ul.inlinelist
+                li ● Caja de plástico
+                li ● Tapa inoxidable
+                li ● Cristal acrílico
+                li ● Banda de uretano
+                li ● 5bar resistentes al agua
+                li ● Analógico de cuarzo
+                li ● Indicador de tiempo
+                li ● Cronógrafo ( 150 vueltas / memoria Split)
+                li ● Data ● Timer ( temporizador doble repetición)
+                li ● Alarma ( 3 canales . Diario)
+                li ● Luz de atrás 
+                li ● Ahorro de energía
+                li ● Pantalla contraste 
+                li ● Duración de la batería ajustable 2 años
+
+          .container.specs(data-sr="enter right")
+            .c3
+              .blue TAMAÑO
+            .c11.bg
+               ul.inlinelist
+                li ● Tamaño de la caja : 44.0mm ( entre 3 y 9 en punto )
+                li ● Grosor de la caja: 11.9mm
+                li ● Peso (incluida la banda) : 45g
+                li ● Tamaño Muñeca conveniente : 140mm a 195mm 
+
+              
+           
+
+
+          
+      hr.mb50
+
+      +footer
+    +scripts

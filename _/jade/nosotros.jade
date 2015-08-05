@@ -1,0 +1,44 @@
+include _config.jade
+include _mixins.jade
+
+doctype html
+html(lang="es")
+  head
+    +head(titulo + " | " , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('nosotros')
+      
+      ul.rslides(data-sr="enter bottom")
+      
+      section.content.inicio
+        .container
+          .c11.tojustify
+            hr.mb50
+            p(data-sr) <strong>Harry Steele</strong> era un hombre con una gran obsesión por el tiempo. Cualquiera que  lo hubiese conocido sabía que para él, el ser puntal, era algo no solo necesario sino de máxima importancia.
+            p(data-sr) Harry Steele nació en Viena,  pero desde muy temprana edad fue traído a Nueva York con nada más que lo que tenía puesto.  Al cumplir con su servicio militar  logró establecer una cadena de 5 joyerías exitosas en San Antonio, donde sus mejores compradores eran de Monterrey. Su obsesión por la puntualidad y su contacto con su clientela mexicana fue lo que lo llevó a empezar en México lo que hoy conocemos como Target Steele.
+            blockquote(data-sr) Un hombre con una gran visión,  que en contra de todos lo consejos y opiniones de gente cercana, logró crear una gran empresa que  tomo a México por sorpresa. Harry Steele el creador de la “Hora de México” y  las dos marcas, Haste y Steelco, que lo representa,  fue un hombre generoso, visionario pero sobre todo puntual.
+            p(data-sr) A través del tiempo H Steele ha logrado traer al mercado mexicano diversas  marcas de prestigio, en diferentes áreas, convirtiéndose en un actor esencial en el posicionamiento de marcas en México. Algunas de las marcas, que ha representado H Steele son: <em>Oneida</em>, <em>Pirex</em>, <em>Westclox</em>, <em>P.M. Steele</em>, <em>Casio</em>, <em>Seiko</em>, <em>Nike</em>, <em>Sturghling Original</em>, <em>Wewood</em>, <em>J Brand Jeans</em>, <em>Ed Hardy</em>, entre otros.
+            p(data-sr) En el 2014, H Steele se fusiona con uno de los grupos más sólidos de comercio exterior y logística en México – Grupo Ei, dando lugar a Target Steele, manteniendo la misma filosofía y misión que cuando se fundó H Steele, ser una empresa que por encima de todo busca llevar calidad, precio, diseño y  puntualidad a sus clientes.
+            p(data-sr) El integrar H Steele a este grupo de empresas líderes en el mercado, se logra ofrecer un canal de suministro integral, eficiente y eficaz. La visión y objetivo de Target Steele, no solo se limita al mundo de la relojería, si no a posicionar diversos productos en el mercado mexicano tal como lo ha hecho a lo largo de 90 años.
+            hr.mt50.mb50
+            p.tocenter(data-sr="enter bottom"): a(href="brochure2015.pdf", data-ob="lightbox").border Ver Brochure 2015
+            hr.mt50.mb50
+            
+          aside.c3
+            article
+              .title Twitter
+              .widget 
+                | <a class="twitter-timeline" href="https://twitter.com/TargetSteele" data-widget-id="613293055924244480">Tweets por el @TargetSteele.</a>
+                |<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+            article
+              .title Facebook
+              .widget
+                | <div id="fb-root"></div>
+                | <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3&appId=149522158451585"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+                | <div class="fb-like" data-href="http://facebook.com/targetsteele" data-width="200" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+      
+      +footer
+    +scripts

@@ -1,0 +1,75 @@
+include _config.jade
+include _mixins.jade
+include asicsMixin.jade
+
+- var watch = "ar07";
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      +breadcrumbsC('AR07')
+      
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/#{watch}_banner.jpg", alt="Asics")
+            .tocenter
+              img(src="_/img/#{watch}_fn.jpg", alt="")
+            
+        .container.asicswatch
+          .mt50
+            h1.c14.tocenter Un reloj casual diseñado con bisel de aluminio y una pantalla LCD de alta visibilidad.
+
+
+              
+            article(data-sr).c3.p5
+              div
+                .img: img(src="_/img/#{watch}_color_1.jpg", alt="")
+                .name CQAR0704 azul/verde lima
+        .mt50
+          .container.specs(data-sr)
+            .c3
+              .blue SPECS
+            .c11.bg
+               ul.inlinelist
+                li ● Caja de plástico
+                li ● Bisel de aluminio
+                li ● Tapa de acero inoxidable
+                li ● Cristal acrílico
+                li ● Banda uretano
+                li ● 5bar resistencia al agua
+                li ● Cronógrafo ( 100 memoria vuelta )
+                li ● Datos (memo disponible)
+                li ● Temporizador ( solo temporizador de repetición )
+                li ● alarma ( alarma diaria de 3 canales )
+                li ● Luz de fondo
+                li ● Pantalla de ajuste de contraste 
+                li ● Dos años de duración de la batería
+
+          .container.specs(data-sr="enter right")
+            .c3
+              .blue TAMAÑO
+            .c11.bg
+               ul.inlinelist
+                li ● Tamaño de la caja : 47.0mm ( entre 3 y 9 en punto ) 
+                li ● Grosor de la caja : 14.1mm
+                li ● Peso (incluida la banda) : 45g
+                li ● Tamaño Muñeca conveniente : 150mm a 200mm
+
+
+              
+           
+
+
+          
+      hr.mb50
+
+      +footer
+    +scripts

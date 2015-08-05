@@ -1,0 +1,59 @@
+include _config.jade
+include _mixins.jade
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      section.container
+      .breadcrumbs.c12
+        a(href="index.html") Inicio
+        | > 
+        a(href="asics.html") Asics
+
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/asics_correr_banner.jpg", alt="Asics")
+            
+        .container
+          .mt50
+            h1.c14 Productos para correr
+            article(data-sr).c3.p1
+              a(href="asics-ar01.html")
+                .desc A la persona que tiene el objetivo de ser un corredor de SUB 3.
+                .img: img(src="_/img/asics_ar01.jpg", alt="")
+                .name AR01 Regular
+            article(data-sr="wait 0.5s").c3
+              a(href="asics-ar02.html")
+                .desc A la persona que tiene el objetivo de ser un corredor de SUB 3.
+                .img: img(src="_/img/asics_ar02.jpg", alt="")
+                .name AR02 Super
+            article(data-sr="wait 1s").c3
+              a(href="asics-ar05.html")
+                .desc A la persona que tiene el deseo de completar el maratón.
+                .img: img(src="_/img/asics_ar05.jpg", alt="")
+                .name AR05
+            article(data-sr="wait 1.5s").c3
+              a(href="asics-ar07.html")
+                .desc A la persona que tiene el deseo de completar el maratón.
+                .img: img(src="_/img/asics_ar07.jpg", alt="")
+                .name AR07
+        .container
+            article(data-sr="wait 2s").new.c3.p6
+              a(href="asics-ar08.html")
+                .desc Nuevo producto para correr de noche.
+                .img: img(src="_/img/asics_ar08.jpg", alt="")
+                .name AR08
+        
+          
+      hr.mb50
+
+      +footer
+    +scripts

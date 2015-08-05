@@ -1,0 +1,86 @@
+include _config.jade
+include _mixins.jade
+include asicsMixin.jade
+
+- var watch = "ar05";
+
+doctype html
+html(lang="es")
+  head
+    +head("Asics | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('asics')
+      +breadcrumbsC('AR05')
+      
+      section.content.asics
+
+           
+        .container
+            ul.rslides(data-sr="enter bottom")
+              li
+                img(src="_/img/#{watch}_banner.jpg", alt="Asics")
+            .tocenter
+              img(src="_/img/#{watch}_fn.jpg", alt="")
+            
+        .container.asicswatch
+          .mt50
+            h1.c14.tocenter Un reloj de gran tamaño de alta calidad con diseño estilizado
+              br
+              | que representa un espírito innovador y dinamismo.
+              
+            article(data-sr).c3.p1
+              div
+                .img: img(src="_/img/#{watch}_color_1.jpg", alt="")
+                .name CQAR0501 negro/plata
+            article(data-sr="wait 0.5s").c3
+              div
+                .img: img(src="_/img/#{watch}_color_2.jpg", alt="")
+                .name CQAR0502 azul/azul
+            article(data-sr="wait 0.5s").c3
+              div
+                .img: img(src="_/img/#{watch}_color_3.jpg", alt="")
+                .name CQAR0503 azul claro/rosa
+            article(data-sr="wait 0.5s").c3
+              div
+                .img: img(src="_/img/#{watch}_color_4.jpg", alt="")
+                .name CQAR0504 rosa/rosa
+        .mt50
+        .container.specs(data-sr)
+          .c3
+            .blue SPECS
+          .c11.bg
+             ul.inlinelist
+              li ● Caja de plástico
+              li ● Bisel de aluminio
+              li ● Tapa de acero inoxidable
+              li ● Cristal acrílico
+              li ● Banda uretano
+              li ● 5bar resistencia al agua
+              li ● Cronógrafo ( 100 memoria vuelta )
+              li ● Datos (memo disponible) 
+              li ● Temporizador ( solo temporizador de repetición )
+              li ● alarma ( alarma diaria de 3 canales )
+              li ● Luz de fondo
+              li ● Pantalla de ajuste de contraste
+              li ● Dos años de duración de la batería 
+        .container.specs(data-sr="enter right")
+          .c3
+            .blue TAMAÑO
+          .c11.bg
+             ul.inlinelist
+              li ● Tamaño de la caja : 38.2mm ( entre 3 y 9 en punto ) espesor
+              li ● Grosor de la caja : 10.7mm
+              li ● Peso (incluida la banda) : 31g
+              li ● Tamaño Muñeca conveniente : 120mm a 175mm
+
+
+              
+           
+
+
+          
+      hr.mb50
+
+      +footer
+    +scripts

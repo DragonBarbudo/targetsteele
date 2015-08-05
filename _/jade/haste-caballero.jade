@@ -1,0 +1,58 @@
+include _config.jade
+include _mixins.jade
+
+doctype html
+html(lang="es")
+  head
+    +head("HASTE La Hora de México | " + titulo , stylesheets, keywords, description)
+  body
+    .wrapper
+      +header('haste')
+      
+      .container
+        ul.rslides(data-sr="enter bottom")
+          li
+            img(src="_/img/haste_caballero_banner.jpg", alt="La Hora de México")
+            img(src="_/img/haste_pleca_banner.png", alt="")
+      
+      section.content.haste
+        .container
+          h1.c14 Modelos para caballero
+          article(data-sr).c3.p1
+            a(href="111-122-485.html")
+              .img: img(src="_/img/haste_c112-411-345.jpg", alt="")
+              .name 111-122-485
+          article(data-sr="wait 0.5s").c3
+            a(href="111-133-620.html")
+              .img: img(src="_/img/haste_c112-411-761.jpg", alt="")
+              .name 111-133-620
+          article(data-sr="wait 1s").c3
+            a(href="111-411-484.html")
+              .img: img(src="_/img/haste_c112-417-449.jpg", alt="")
+              .name 111-411-484
+          article(data-sr="wait 1.5s").c3
+            a(href="111-411-620.html")
+              .img: img(src="_/img/haste_c112-421-761.jpg", alt="")
+              .name 111-411-620
+        .container
+          article(data-sr).c3.p2
+            a(href="111-416-494.html")
+              .img: img(src="_/img/haste_c112-427-983.jpg", alt="")
+              .name 111-416-494
+          article(data-sr="wait 0.5s").c3
+            a(href="111-417-494.html")
+              .img: img(src="_/img/haste_c112-461-345.jpg", alt="")
+              .name 111-417-494
+          article(data-sr="wait 1s").c3
+            a(href="111-419-494.html")
+              .img: img(src="_/img/haste_c113-411-764.jpg", alt="")
+              .name 111-419-494
+
+           
+
+            
+          
+      hr.mb50
+
+      +footer
+    +scripts
